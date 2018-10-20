@@ -5,11 +5,11 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  badge_maker(name)
+  attendees.each{|attendee|"Hello, my name is #{attendee}."}
 end 
 
 def assign_rooms(attendees)
-  @room += 1
+  
   "Hello, #{attendees}! You'll be assigned to room #{room}!"
 end 
 
